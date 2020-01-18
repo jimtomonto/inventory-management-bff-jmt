@@ -3,8 +3,10 @@
 # Declare variables to be passed into your templates.
 global: {}
 
-replicaCount: 1
-logLevel: "debug"
+serviceUrl: 'inventory-management-service-jmt:80'
+
+replicaCount: 2
+logLevel: 'debug'
 
 image:
   repository: replace
@@ -12,8 +14,8 @@ image:
   pullPolicy: IfNotPresent
   port: 3000
 
-nameOverride: ""
-fullnameOverride: ""
+nameOverride: ''
+fullnameOverride: ''
 
 service:
   type: ClusterIP
@@ -26,9 +28,8 @@ ingress:
     # web or app - https://cloud.ibm.com/docs/services/appid?topic=appid-kube-auth
     requestType: web
 
-#  host: hello
+  #  host: hello
   namespaceInHost: true
   subdomain: containers.appdomain.cloud
-  path: "/"
-
+  path: '/'
 #  tlsSecretName: ""
