@@ -34,6 +34,15 @@ export class StockItemsMockService implements StockItemsApi {
         unitPrice: 5.25,
         picture: 'https://via.placeholder.com/32.png',
         manufacturer: 'Farenginar Exploits'
+      },
+      {
+        id: '4',
+        name: 'BFF Mock Tooth sharpener',
+        description: 'Industrial strength tooth sharpener',
+        stock: 30,
+        unitPrice: 5.25,
+        picture: 'https://via.placeholder.com/32.png',
+        manufacturer: 'Big Jim Tools'
       }
     ];
   }
